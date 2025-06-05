@@ -4,7 +4,7 @@ title: "API Updates"
 sidebar_label: "Updates"
 ---
 
-# \ud83d\udce2 Recent API Updates
+# Recent API Updates
 
 We would like to inform our developers of the following changes made to the API:
 
