@@ -23,6 +23,13 @@ function HomepageHeader() {
           >
             🚀 Quick Start Guide
           </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/updates"
+            style={{ marginLeft: "1rem" }}
+          >
+            📢 Updates
+          </Link>
           {/* Optional: Add API Reference Button */}
           <Link
             className="button button--primary button--lg"
