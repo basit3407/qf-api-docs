@@ -29,6 +29,14 @@ const sidebars = {
     },
   ],
 
+  updatesSidebar: [
+    {
+      type: "doc",
+      id: "updates/index",
+      label: "📢 Updates",
+    },
+  ],
+
   scopesSidebar: [
     {
       type: "doc",
