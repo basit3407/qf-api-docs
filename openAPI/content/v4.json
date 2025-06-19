@@ -5305,12 +5305,27 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "tafsirs": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/tafsir"
-                      }
+                    "tafsir": {
+                      "$ref": "#/components/schemas/tafsir"
                     }
+                  }
+                },
+                "example": {
+                  "tafsir": {
+                    "verses": {
+                      "2:111": { "id": 118 },
+                      "2:112": { "id": 119 },
+                      "2:113": { "id": 120 }
+                    },
+                    "resource_id": 168,
+                    "resource_name": "Ma'arif al-Qur'an",
+                    "language_id": 38,
+                    "slug": "en-tafsir-maarif-ul-quran",
+                    "translated_name": {
+                      "name": "Ma'arif al-Qur'an",
+                      "language_name": "english"
+                    },
+                    "text": "<p>The Jews and the Christians were hostile not only to the Muslims, but also to each other...</p>"
                   }
                 }
               }
