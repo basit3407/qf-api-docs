@@ -5305,11 +5305,8 @@
                 "schema": {
                   "type": "object",
                   "properties": {
-                    "tafsirs": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/tafsir"
-                      }
+                    "tafsir": {
+                      "$ref": "#/components/schemas/tafsir"
                     }
                   }
                 }
