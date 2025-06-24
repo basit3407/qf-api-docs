@@ -1502,6 +1502,76 @@
         "operationId": "random_verse",
         "parameters": [
           {
+            "name": "chapter_number",
+            "in": "query",
+            "description": "If you want a random verse from a specific chapter/surah.",
+            "schema": {
+              "maximum": 114,
+              "minimum": 1,
+              "type": "integer"
+            }
+          },
+          {
+            "name": "page_number",
+            "in": "query",
+            "description": "If you want a random verse from a specific page.",
+            "schema": {
+              "maximum": 604,
+              "minimum": 1,
+              "type": "integer"
+            }
+          },
+          {
+            "name": "juz_number",
+            "in": "query",
+            "description": "If you want a random verse from a specific juz.",
+            "schema": {
+              "maximum": 30,
+              "minimum": 1,
+              "type": "integer"
+            }
+          },
+          {
+            "name": "hizb_number",
+            "in": "query",
+            "description": "If you want a random verse from a specific hizb.",
+            "schema": {
+              "maximum": 60,
+              "minimum": 1,
+              "type": "integer"
+            }
+          },
+          {
+            "name": "rub_el_hizb_number",
+            "in": "query",
+            "description": "If you want a random verse from a specific Rub el Hizb.",
+            "schema": {
+              "maximum": 240,
+              "minimum": 1,
+              "type": "integer"
+            }
+          },
+          {
+            "name": "ruku_number",
+            "in": "query",
+            "description": "If you want a random verse from a specific ruku.",
+            "schema": {
+              "maximum": 556,
+              "minimum": 1,
+              "type": "number"
+            }
+          },
+          {
+            "name": "manzil_number",
+            "in": "query",
+            "description": "If you want a random verse from a specific manzil.",
+            "schema": {
+              "maximum": 7,
+              "minimum": 1,
+              "type": "number"
+            }
+          },
+          {
             "name": "language",
             "in": "query",
             "description": "Language to fetch word translation in specific language.",

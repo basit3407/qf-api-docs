@@ -25,6 +25,14 @@ import TabItem from "@theme/TabItem";
 
 
 Get a random verse. You can get random verse from a specific `chapter`,`page`, `juz`, `hizb`, `rub-el-hizb`, `ruku`, `manzil`, or from whole Quran.
+Examples:
+- `/api/v4/verses/random?chapter_number=2` – random verse from Surah 2
+- `/api/v4/verses/random?page_number=100` – random verse from page 100
+- `/api/v4/verses/random?juz_number=5` – random verse from Juz 5
+- `/api/v4/verses/random?hizb_number=10` – random verse from Hizb 10
+- `/api/v4/verses/random?rub_el_hizb_number=20` – random verse from Rub El Hizb 20
+- `/api/v4/verses/random?ruku_number=45` – random verse from Ruku 45
+- `/api/v4/verses/random?manzil_number=3` – random verse from Manzil 3
 
 <details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Query Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"language","in":"query","description":"Language to fetch word translation in specific language.","schema":{"type":"string","default":"en"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"words","in":"query","description":"Include words of each ayah? \n\n0 or false will not include words.\n\n1 or true will include the words.","schema":{"type":"string","default":"true","enum":["true","false"]}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"translations","in":"query","description":"comma separated ids of translations to load for each ayah.","schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"audio","in":"query","description":"Id of recitation if you want to load audio of each ayah.","schema":{"type":"integer"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"tafsirs","in":"query","description":"Comma separated ids of tafisrs to load for each ayah if you want to load tafisrs.","schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"word_fields","in":"query","description":"Comma separated list of word fields if you want to add more fields for each word. ","schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"translation_fields","in":"query","description":"Comma separated list of translation fields if you want to add more fields for each translation. ","schema":{"type":"string"}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"fields","in":"query","description":"comma separated  list of ayah fields.","schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
 
