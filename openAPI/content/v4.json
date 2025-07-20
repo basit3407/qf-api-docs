@@ -122,16 +122,6 @@
               "type": "string",
               "default": "en"
             }
-          },
-          {
-            "name": "segments",
-            "in": "query",
-            "description": "Include timestamps for each verse",
-            "schema": {
-              "type": "string",
-              "default": "false",
-              "enum": ["true", "false"]
-            }
           }
         ],
         "responses": {
